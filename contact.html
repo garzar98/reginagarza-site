@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Regina</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+ 
+ <section class="hero">
+   <div class="hero-content">
+    <h1>Let’s Connect</h1>
+    <p>Whether it’s for a project, opportunity, or just to say hello — I’d love to hear from you.</p>
+   <div class="wave-divider">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,100 C480,200 960,0 1440,100 L1440,150 L0,150 Z" fill="#fdfaf6"/>
+      </svg>
+   </div>
+
+   <form action="mailto:reginag1998@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+ </section>
+  <footer>
+    &copy; 2025 Regina Garza Gonzalez. All rights reserved.
+  </footer>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    body.classList.add("page-enter");
+    requestAnimationFrame(() => {
+      body.classList.add("page-enter-active");
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Regina</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+    <section class="hero">
+    <div class="hero-content">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,100 C480,200 960,0 1440,100 L1440,150 L0,150 Z" fill="#fdfaf6"/>
+      </svg>
+    </div>
+    <br>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Professional Journey</h3>
+        <p>I’m a designer focused on thoughtful, intuitive digital experiences. With a background in UX and product strategy, I’ve worked across startups and enterprise environments to bring clarity and simplicity to complex systems.</p>
+      </div>
+      <div class="feature">
+        <h3>Approach</h3>
+        <p>My work blends creativity and structure. I love the intersection of research and aesthetics, always aiming for elegant yet accessible solutions.</p>
+      </div>
+    </div>
+  </section>
+</section>
+  <footer>
+    &copy; 2025 Regina Garza Gonzalez. All rights reserved.
+  </footer>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    body.classList.add("page-enter");
+    requestAnimationFrame(() => {
+      body.classList.add("page-enter-active");
+    });
+  });
+</script>
+</body>
+</html>
